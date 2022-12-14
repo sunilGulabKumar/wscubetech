@@ -1,0 +1,44 @@
+{% extends 'base.html' %} 
+    {% block content %} 
+            <!--  Start about Area  -->
+                <section class="feature-Area section-gap" id ="secvice">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="menu-content pb-60 col-lg-8">
+                                <div class="title text-center">
+                                    <hi class="mb-10">user form</h1>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">           
+                            <div class="col-12">
+                            <form method="post" action="{% url 'submitform' %}">
+                                <fieldset>
+                                {% csrf_token %}
+                                    {{form}}
+                                    <div>
+                                        <label for="">Value1</label>
+                                        <input type="text" name="num1" value="{{n1}}" class="form-control"/>
+                                    </div>
+                                    <br/>
+                                    <div>
+                                        <label for="">Value2</label>
+                                        <input type="text" name="num2" value="{{n2}}" class="form-control"/>
+                                    </div>
+                                    <br/>
+                                    <div class="pt-4">
+                                        <button type="submit">save</button>
+                                    </div>
+                                    <br/>
+                                    output
+                                    <input type="text" value="{{output}}" class="form-control"/>
+                                </fieldset>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!--  end about Area  -->
+ 
+    {% endblock %}

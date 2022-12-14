@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="section-top-border">
+    <h3>Image Gallery</h3>
+    <div class="row gallery-item">
+        <div class="col-md-4">
+            <a href="/static/img/elements/g1.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(/static/img/elements/g1.jpg);"></div></a>
+        </div>
+        <div class="col-md-4">
+            <a href="/static/img/elements/g2.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(/static/img/elements/g2.jpg);"></div></a>
+        </div>
+        <div class="col-md-4">
+            <a href="/static/img/elements/g3.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(/static/img/elements/g3.jpg);"></div></a>
+        </div>
+        <div class="col-md-6">
+            <a href="/static/img/elements/g4.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(/static/img/elements/g4.jpg);"></div></a>
+        </div>
+        <div class="col-md-6">
+            <a href="/static/img/elements/g5.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(/static/img/elements/g5.jpg);"></div></a>
+        </div>
+        <div class="col-md-4">
+            <a href="/static/img/elements/g6.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(/static/img/elements/g6.jpg);"></div></a>
+        </div>
+        <div class="col-md-4">
+            <a href="/static/img/elements/g7.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(/static/img/elements/g7.jpg);"></div></a>
+        </div>
+        <div class="col-md-4">
+            <a href="/static/img/elements/g8.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(/static/img/elements/g8.jpg);"></div></a>
+        </div>
+    </div>
+</div>
+
+<!-- Start gallery Area -->
+<section class="gallery-area" id="gallery">
+    <div class="container-fluid">
+        <div class="row no-padding">
+            <div class="active-gallery">
+                <div class="item single-gallery">
+                    <img src="/static/img/g1.jpg" alt="">
+                </div>	
+                <div class="item single-gallery">
+                    <img src="/static/img/g2.jpg" alt="">
+                </div>	
+                <div class="item single-gallery">
+                    <img src="/static/img/g3.jpg" alt="">
+                </div>	
+                <div class="item single-gallery">
+                    <img src="/static/img/g4.jpg" alt="">
+                </div>	
+                <div class="item single-gallery">
+                    <img src="/static/img/g5.jpg" alt="">
+                </div>	
+                <div class="item single-gallery">
+                    <img src="/static/img/g6.jpg" alt="">
+                </div>																		
+            </div>
+        </div>
+    </div>	
+</section>
+<!-- End gallery Area -->
+			
+<div class="section-top-border">
+    <div class="row">
+        <div class="col-md-4">
+            <h3 class="mb-20">Image Gallery</h3>
+            <div class="typography">
+                <h1>This is header 01</h1>
+                <h2>This is header 02</h2>
+                <h3>This is header 03</h3>
+                <h4>This is header 04</h4>
+                <h5>This is header 01</h5>
+                <h6>This is header 01</h6>
+            </div>
+        </div>
+        <div class="col-md-4 mt-sm-30">
+            <h3 class="mb-20">Unordered List</h3>
+            <div class="">
+                <ul class="unordered-list">
+                    <li>Fta Keys</li>
+                    <li>For Women Only Your Computer Usage</li>
+                    <li>Facts Why Inkjet Printing Is Very Appealing
+                        <ul>
+                            <li>Addiction When Gambling Becomes
+                                <ul>
+                                    <li>Protective Preventative Maintenance</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Dealing With Technical Support 10 Useful Tips</li>
+                    <li>Make Myspace Your Best Designed Space</li>
+                    <li>Cleaning And Organizing Your Computer</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4 mt-sm-30">
+            <h3 class="mb-20">Ordered List</h3>
+            <div class="">
+                <ol class="ordered-list">
+                    <li><span>Fta Keys</span></li>
+                    <li><span>For Women Only Your Computer Usage</span></li>
+                    <li><span>Facts Why Inkjet Printing Is Very Appealing</span>
+                        <ol class="ordered-list-alpha">
+                            <li><span>Addiction When Gambling Becomes</span>
+                                <ol class="ordered-list-roman">
+                                    <li><span>Protective Preventative Maintenance</span></li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><span>Dealing With Technical Support 10 Useful Tips</span></li>
+                    <li><span>Make Myspace Your Best Designed Space</span></li>
+                    <li><span>Cleaning And Organizing Your Computer</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
